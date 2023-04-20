@@ -210,7 +210,15 @@ export default {
       // 弹框
       this.dialogVideoFormVisible = true
       // 清空
-      this.video = {}
+      this.video = {
+        id: '',
+        courseId: '',
+        title: '',
+        sort: 0,
+        free: 0,
+        videoSourceId: '',
+        videoOriginalName: ''// 视频名称
+      }
       this.fileList = []
       console.log(!videoId)
       if(!videoId){
